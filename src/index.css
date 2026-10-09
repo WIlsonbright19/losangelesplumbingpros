@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FFF1F5;
+  --color-surface: #FFFFFF;
+  --color-ink: #2B1020;
+  --color-ink-soft: #6E4A5C;
+  --color-primary: #D6246E;
+  --color-primary-hover: #B81C5B;
+  --color-deep: #3A0F26;
+  --color-sun: #FFB84D;
+  --color-tint: #FFE1EB;
+  --color-line: #F1CBD9;
+  --color-error: #B3261E;
+
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+  --bg: #FFF1F5;
+  --surface: #FFFFFF;
+  --ink: #2B1020;
+  --ink-soft: #6E4A5C;
+  --primary: #D6246E;
+  --primary-hover: #B81C5B;
+  --deep: #3A0F26;
+  --sun: #FFB84D;
+  --tint: #FFE1EB;
+  --line: #F1CBD9;
+  --error: #B3261E;
+  --shadow-pop: 0 16px 36px -14px rgba(58, 15, 38, 0.38);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utility for shadow-pop token */
+.shadow-pop {
+  box-shadow: 0 16px 36px -14px rgba(58, 15, 38, 0.38);
+}
+
